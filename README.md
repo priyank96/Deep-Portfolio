@@ -10,4 +10,10 @@
 
 5. Run _makeDataset/companyWise/normalise.py_ to generate `NormalisedCompanyWiseDict.pkl`
 
-6. Run _autoEncoder/autoEncoder.py_ to train the Stacked LSTM Auto-Encoder on the dataset!
+6. Run _makeDataset/companyWise/DatasetInputFormatter.py_ to generate `NormalisedCompanyWiseDict.pkl`
+
+7. Run _autoEncoder/autoEncoder.py_ to train the Stacked LSTM Auto-Encoder on the dataset!
+
+
+###Note
+Do not commit any of the raw dataset and generated .pkl files!

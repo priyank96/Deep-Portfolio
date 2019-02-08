@@ -15,5 +15,6 @@
 7. Run _autoEncoder/autoEncoder.py_ to train the Stacked LSTM Auto-Encoder on the dataset!
 
 
-###Note
+##Note
+
 Do not commit any of the raw dataset and generated .pkl files!

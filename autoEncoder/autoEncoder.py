@@ -1,8 +1,6 @@
 # lstm autoencoder recreate sequence
 import pickle
-import os
-print(os.path.join(os.path.dirname(os.getcwd()),'makeDataset','processedData','FinalDataset.pkl'))
-print('sdf')
+
 from keras.layers import Dense, Input
 from keras.layers import LSTM
 from keras.layers import TimeDistributed
@@ -10,7 +8,7 @@ from keras.models import Sequential
 from numpy import array
 
 # define input sequence
-with open(os.path.join(os.path.dirname(os.getcwd()),'makeDataset','processedData','FinalDataset.pkl'), 'rb') as f:
+with open("../makeDataset/processedData/FinalDataset.pkl", 'rb') as f:
     sequence = pickle.load(f)
 sequence = array(sequence)
 sequence = sequence.reshape((len(sequence), 20, 4))

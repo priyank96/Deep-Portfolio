@@ -1,7 +1,6 @@
 # Don't know how to normalize volume data so leaving it as it is for now
 # 0th position is time stamp leaving that untouched
 import pickle
-import os
     
 symbols = []
 
@@ -21,14 +20,14 @@ def normalize(series):
         series[0][j] = float(0)
 
 
-with open(os.path.join(os.getcwd(), 'processedData','CompanyWiseDict.pkl'), 'rb') as f:
+with open("./processedData/CompanyWiseDict.pkl", 'rb') as f:
     companyDict = pickle.load(f)
 
 for symbol in companyDict.keys():
     normalize(companyDict[symbol])
     remove_volume_and_time(companyDict[symbol])
 
-with open(os.path.join(os.getcwd(), 'processedData', 'NormalisedCompanyWiseDict.pkl'), 'wb') as f:
+with open("./processedData/NormalisedCompanyWiseDict.pkl", 'wb') as f:
     pickle.dump(companyDict, f)
 
 print("done")

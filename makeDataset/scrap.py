@@ -1,7 +1,9 @@
 import requests
 import datetime
+import os
 from datetime import timedelta
 from dateutil import relativedelta
+
 
 startDate = datetime.date(2013, 10, 1)
 print(startDate)
@@ -9,11 +11,7 @@ print(startDate)
 endDate = startDate + timedelta(days=29)
 print(endDate)
 
-import os 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-print(dir_path)
-
-with open("./instruments.txt") as f:
+with open(os.path.join(os.getcwd(), 'instruments.txt')) as f:
     content = f.readlines()
 # content = ["256265,"]     NIFTY 50 symbol
 while endDate < datetime.date.today():
@@ -33,7 +31,7 @@ while endDate < datetime.date.today():
         res = requests.get(stra)
 
         if len(res.text) > 50:
-            with open("./rawData/"+instrument+"-"+str(startDate), "w+") as fil:
+            with open(os.path.join(os.getcwd(), 'rawData', instrument+"-"+ str(startDate)), "w+") as fil:
                 fil.write(res.text)
             print("Done")
 

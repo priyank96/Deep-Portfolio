@@ -3,15 +3,16 @@ import json
 import ciso8601
 import time
 import pickle
+import os
 
-with open("./instruments.txt") as f:
+with open(os.arg_path.join(os.getcwd(), 'instruments.txt')) as f:
     instruments = f.readlines()
 instruments = [x.split(",")[0] for x in instruments]
 
 final_dict = dict()
 for instrument_name in instruments:
     data = []
-    files = glob.glob("./rawData/*" + instrument_name + "*")
+    files = glob.glob(os.path.join(os.getcwd(), 'rawData')+"/*" + instrument_name + "*")
     for fil in files:
         with open(fil, 'r') as f:
             parsed_json = json.loads(f.read())
@@ -23,6 +24,6 @@ for instrument_name in instruments:
     final_dict[instrument_name] = sorted(data, key=lambda x: x[0])
     print(instrument_name,len(final_dict[instrument_name]))
 
-with open("./processedData/CompanyWiseDict.pkl", 'wb') as f:
+with open(os.path.join(os.getcwd(), 'processedData', 'CompanyWiseDict.pkl'), 'wb') as f:
     pickle.dump(final_dict, f)
 print("done")

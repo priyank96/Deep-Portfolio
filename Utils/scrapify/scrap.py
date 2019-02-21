@@ -9,8 +9,11 @@ print(startDate)
 endDate = startDate + timedelta(days=29)
 print(endDate)
 
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+print(dir_path)
 
-with open("instruments") as f:
+with open("C:/Users/venka/source/repos/Deep-Portfolio/makeDataset/scrapify/instruments.txt") as f:
     content = f.readlines()
 # content = ["256265,"]     NIFTY 50 symbol
 while endDate < datetime.date.today():
@@ -18,7 +21,7 @@ while endDate < datetime.date.today():
         la = i.split(",")
         instrument = la[0]
         print("Trying " + str(startDate) + " " + la[1][:-1])
-        stra = "https://kitecharts.zerodha.com/api/chart/"+str(instrument)+"/minute?public_token=" \
+        stra = "https://kitecharts.zerodha.com/api/chart/"+str(instrument)+"/day?public_token=" \
                                                                            "J1gWZ4LxjyUhjMGq0yFOz8zFRT6tNxBR" \
                                                                            "&user_id=DP4281" \
                                                                            "&api_key=kitefront&access_token=" \
@@ -30,7 +33,7 @@ while endDate < datetime.date.today():
         res = requests.get(stra)
 
         if len(res.text) > 50:
-            with open("../RAW/"+instrument+"-"+str(startDate), "w+") as fil:
+            with open("../RAWDAY/"+instrument+"-"+str(startDate), "w+") as fil:
                 fil.write(res.text)
             print("Done")
 

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{659a7929-675d-49f4-b309-f0382c571cbe}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>makeDataset\scrapify\scrap.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>makeDataset\scrapify</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>CondaEnv|CondaEnv|tf-gpu</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="autoEncoder\autoEncoder.py" />
+    <Compile Include="autoEncoder\__init__.py" />
+    <Compile Include="makeDataset\companyWise\DatasetInputFormatter.py" />
+    <Compile Include="makeDataset\companyWise\makeRawDataset.py" />
+    <Compile Include="makeDataset\companyWise\normalise.py" />
+    <Compile Include="makeDataset\companyWise\viewDataset.py" />
+    <Compile Include="makeDataset\companyWise\__init__.py" />
+    <Compile Include="makeDataset\live\live.py" />
+    <Compile Include="makeDataset\live\__init__.py" />
+    <Compile Include="makeDataset\pandafy\normalise.py" />
+    <Compile Include="makeDataset\pandafy\pandafy.py" />
+    <Compile Include="makeDataset\pandafy\viewDataFrame.py" />
+    <Compile Include="makeDataset\pandafy\__init__.py" />
+    <Compile Include="makeDataset\querySide\cluster.py" />
+    <Compile Include="makeDataset\querySide\query.py" />
+    <Compile Include="makeDataset\querySide\__init__.py" />
+    <Compile Include="makeDataset\scrapify\scrap.py" />
+    <Compile Include="makeDataset\similarity\euclidean.py" />
+    <Compile Include="makeDataset\similarity\volume_euclidean.py" />
+    <Compile Include="makeDataset\similarity\__init__.py" />
+    <Compile Include="setup.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="autoEncoder" />
+    <Folder Include="makeDataset\" />
+    <Folder Include="makeDataset\companyWise" />
+    <Folder Include="makeDataset\live" />
+    <Folder Include="makeDataset\pandafy" />
+    <Folder Include="makeDataset\querySide" />
+    <Folder Include="makeDataset\scrapify" />
+    <Folder Include="makeDataset\similarity" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|tf-gpu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="makeDataset\scrapify\instruments.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

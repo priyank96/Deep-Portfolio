@@ -8,7 +8,7 @@ from keras.models import Sequential
 from numpy import array
 
 # define input sequence
-with open("../makeDataset/companyWise/FinalDataset.pkl", 'rb') as f:
+with open("../makeDataset/processedData/FinalDataset.pkl", 'rb') as f:
     sequence = pickle.load(f)
 sequence = array(sequence)
 sequence = sequence.reshape((len(sequence), 20, 4))
@@ -26,3 +26,6 @@ model.compile(optimizer='adam', loss='mse')
 print(model.summary())
 # fit model
 model.fit(sequence, sequence, epochs=300, batch_size=64, validation_split=0.2)
+
+# save the model weight in a model-weights folder
+# do not delete old one, rename it by appending time stamp

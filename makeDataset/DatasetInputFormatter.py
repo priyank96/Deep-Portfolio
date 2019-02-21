@@ -1,6 +1,6 @@
 import pickle
 
-with open("NormalisedCompanyWiseDict.pkl", 'rb') as f:
+with open("./dataFiles/NormalisedCompanyWiseDict.pkl", 'rb') as f:
     vals = pickle.load(f)  # dict
 
 final_dataset = []  # will finally be n * 20 * 4 list

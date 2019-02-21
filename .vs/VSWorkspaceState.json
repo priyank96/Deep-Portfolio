@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\makeDataset",
+    "\\Utils",
+    "\\Utils\\scrapify"
   ],
-  "SelectedNode": "\\requirements.txt",
+  "SelectedNode": "\\makeDataset\\scrap.py",
   "PreviewInSolutionExplorer": false
 }

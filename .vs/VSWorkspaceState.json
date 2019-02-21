@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\makeDataset",
-    "\\makeDataset\\rawadata"
+    "\\Utils",
+    "\\Utils\\scrapify"
   ],
-  "SelectedNode": "\\makeDataset\\rawadata\\136308228-2013-10-01",
+  "SelectedNode": "\\makeDataset\\scrap.py",
   "PreviewInSolutionExplorer": false
 }

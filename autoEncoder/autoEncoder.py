@@ -6,6 +6,9 @@ from keras.layers import LSTM
 from keras.layers import TimeDistributed
 from keras.models import Sequential
 from numpy import array
+import os
+
+print(os.getcwd())
 
 # define input sequence
 with open("../makeDataset/processedData/FinalDataset.pkl", 'rb') as f:

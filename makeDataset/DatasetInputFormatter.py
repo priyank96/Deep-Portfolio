@@ -1,6 +1,6 @@
 import pickle
 
-with open("./dataFiles/NormalisedCompanyWiseDict.pkl", 'rb') as f:
+with open("./processedData/NormalisedCompanyWiseDict.pkl", 'rb') as f:
     vals = pickle.load(f)  # dict
 
 final_dataset = []  # will finally be n * 20 * 4 list
@@ -13,7 +13,7 @@ print("n: ", len(final_dataset))
 print("20: ", len(final_dataset[0]))
 print("4: ", len(final_dataset[0][0]))
 
-with open("FinalDataset.pkl", 'wb') as f:
+with open("./processedData/FinalDataset.pkl", 'wb') as f:
     pickle.dump(final_dataset, f)
 
 print("done")

@@ -3346,6 +3346,7 @@
     <Content Include="Utils\scrapify\instruments.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="autoEncoder\autoEncoder - Copy.py" />
     <Compile Include="autoEncoder\autoEncoder.py" />
     <Compile Include="autoEncoder\__init__.py" />
     <Compile Include="makeDataset\DatasetInputFormatter.py" />
@@ -3353,6 +3354,9 @@
     <Compile Include="makeDataset\normalise.py" />
     <Compile Include="makeDataset\scrap.py" />
     <Compile Include="makeDataset\viewDataset.py" />
+    <Compile Include="run.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="setup.py" />
     <Compile Include="Utils\live\live.py" />
     <Compile Include="Utils\live\__init__.py" />

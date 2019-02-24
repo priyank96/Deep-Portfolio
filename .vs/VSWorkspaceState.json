@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\makeDataset",
-    "\\Utils",
+    "\\autoEncoder",
+    "\\autoEncoder\\__pycache__",
     "\\Utils\\scrapify"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\autoEncoder\\__pycache__\\__init__.cpython-36.pyc",
   "PreviewInSolutionExplorer": false
 }

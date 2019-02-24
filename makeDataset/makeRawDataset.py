@@ -1,3 +1,6 @@
+# creates CompanyWiseDict.pkl, which contains a dictionary where the keys are instrument symbols and each value
+# is a list of the historical price in sorted order (oldest data first). The entries in this list contain 
+# timestamp, open, high, low, close and volume data
 import glob
 import json
 import ciso8601
@@ -11,7 +14,7 @@ instruments = [x.split(",")[0] for x in instruments]
 final_dict = dict()
 for instrument_name in instruments:
     data = []
-    files = glob.glob("./rawData/*" + instrument_name + "*")
+    files = glob.glob("./rawData/" + instrument_name + "-*")
     for fil in files:
         with open(fil, 'r') as f:
             parsed_json = json.loads(f.read())

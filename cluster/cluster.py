@@ -2,7 +2,7 @@ from scipy import spatial
 import networkx as nx
 import community
 
-class Cluster:
+class Cluster: 
     def generate_clusters(to_cluster):
 
         instruments = list(to_cluster.keys())
@@ -20,3 +20,4 @@ class Cluster:
             G.add_edge(tuple(edge_tuple))
 
         communities = community.best_partition(G)
+

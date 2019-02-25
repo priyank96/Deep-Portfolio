@@ -1,7 +1,7 @@
 from scipy import spatial
 import networkx as nx
-#import networkx.algorithms.community as community
 import community
+
 class Cluster: 
     def generate_clusters(self, to_cluster):
 
@@ -28,4 +28,3 @@ if __name__ == "__main__":
     print("Running Test#1  for Clustering")
     test1_dict = {"a":[1,2,3],"b":[90,9,9],"c":[1,1,3],"d":[90,8,8]}
     print(cluster.generate_clusters(test1_dict))
-

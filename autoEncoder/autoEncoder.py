@@ -43,3 +43,4 @@ class AutoEncoder:
         #Run the model on the input timeseries and get vector representation
         vectors = model.predict(data)
         return vectors
+        

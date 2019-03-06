@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="023c6027-b630-4e66-94cd-727e67c46e53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/makeDataset/companyWise/makeRawDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/makeDataset/companyWise/makeRawDataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/makeDataset/live/live.py" beforeDir="false" afterPath="$PROJECT_DIR$/makeDataset/live/live.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/makeDataset/pandafy/pandafy.py" beforeDir="false" afterPath="$PROJECT_DIR$/makeDataset/pandafy/pandafy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/makeDataset/scrapify/instruments" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/makeDataset/scrapify/scrap.py" beforeDir="false" afterPath="$PROJECT_DIR$/makeDataset/scrapify/scrap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,43 +10,73 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-468455761">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="2" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="554" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="554" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autoEncoder/autoEncoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-              <folding>
-                <element signature="e#37#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/makeRawDataset.py">
+        <entry file="file://$PROJECT_DIR$/makeDataset/makeBacktestDataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/normalise.py">
+        <entry file="file://$PROJECT_DIR$/makeDataset/instruments.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="368">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/DatasetInputFormatter.py">
+        <entry file="file://$PROJECT_DIR$/makeDataset/makeRawDataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="345">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -88,6 +113,8 @@
         <option value="$PROJECT_DIR$/makeDataset/companyWise/DatasetInputFormatter.py" />
         <option value="$PROJECT_DIR$/makeDataset/companyWise/normalise.py" />
         <option value="$PROJECT_DIR$/autoEncoder/autoEncoder.py" />
+        <option value="$PROJECT_DIR$/makeDataset/instruments.txt" />
+        <option value="$PROJECT_DIR$/makeDataset/makeBacktestDataset.py" />
       </list>
     </option>
   </component>
@@ -110,6 +137,11 @@
               <item name="Deep-Portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="Deep-Portfolio" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Deep-Portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deep-Portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="makeDataset" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -117,7 +149,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Deep-Portfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -145,7 +177,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.autoEncoder (1)">
+  <component name="RunManager" selected="Python.makeBacktestDataset">
     <configuration name="DatasetInputFormatter (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Stuff" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,27 +191,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/makeDataset/companyWise/DatasetInputFormatter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="DatasetInputFormatter" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Stuff" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/makeDataset/CompanyWise" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/makeDataset/CompanyWise/DatasetInputFormatter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,7 +220,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="autoEncoder" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="makeBacktestDataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Stuff" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,11 +228,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/makeDataset/autoEncoder" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/makeDataset" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/makeDataset/autoEncoder/autoEncoder.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/makeDataset/makeBacktestDataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="makeRawDataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Stuff" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/makeDataset" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/makeDataset/makeRawDataset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,18 +285,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.DatasetInputFormatter (1)" />
-      <item itemvalue="Python.DatasetInputFormatter" />
       <item itemvalue="Python.autoEncoder (1)" />
-      <item itemvalue="Python.autoEncoder" />
       <item itemvalue="Python.normalise" />
+      <item itemvalue="Python.makeRawDataset" />
+      <item itemvalue="Python.makeBacktestDataset" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.makeBacktestDataset" />
+        <item itemvalue="Python.makeRawDataset" />
         <item itemvalue="Python.autoEncoder (1)" />
         <item itemvalue="Python.DatasetInputFormatter (1)" />
         <item itemvalue="Python.normalise" />
-        <item itemvalue="Python.autoEncoder" />
-        <item itemvalue="Python.DatasetInputFormatter" />
       </list>
     </recent_temporary>
   </component>
@@ -291,21 +323,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17870723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3328841" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49936628" weight="0.3328841" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32884097" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32884097" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006337" side_tool="true" visible="true" weight="0.3328841" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -331,73 +363,48 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/__init__.py" />
     <entry file="file://$PROJECT_DIR$/makeDataset/RAW/128008708-2018-02-07" />
     <entry file="file://$PROJECT_DIR$/makeDataset/RAW/128002564-2016-04-18" />
     <entry file="file://$PROJECT_DIR$/makeDataset/RAW/256265-2014-12-25" />
     <entry file="file://$PROJECT_DIR$/makeDataset/scrapify/instruments" />
-    <entry file="file://$PROJECT_DIR$/makeDataset/pandafy/pandafy.py">
+    <entry file="file://$PROJECT_DIR$/makeDataset/pandafy/pandafy.py" />
+    <entry file="file://$PROJECT_DIR$/makeDataset/pandafy/viewDataFrame.py" />
+    <entry file="file://$PROJECT_DIR$/makeDataset/scrapify/scrap.py" />
+    <entry file="file://$PROJECT_DIR$/makeDataset/pandafy/normalise.py" />
+    <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/viewDataset.py" />
+    <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/normalise.py" />
+    <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/DatasetInputFormatter.py" />
+    <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/makeRawDataset.py" />
+    <entry file="file://$PROJECT_DIR$/makeDataset/makeRawDataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="345">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makeDataset/pandafy/viewDataFrame.py">
+    <entry file="file://$PROJECT_DIR$/makeDataset/instruments.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makeDataset/scrapify/scrap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makeDataset/pandafy/normalise.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/viewDataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="368">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/autoEncoder/autoEncoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-          <folding>
-            <element signature="e#37#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/normalise.py">
+    <entry file="file://$PROJECT_DIR$/makeDataset/makeBacktestDataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/DatasetInputFormatter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makeDataset/companyWise/makeRawDataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

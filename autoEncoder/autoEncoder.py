@@ -8,7 +8,10 @@ from numpy import array
 
 
 class AutoEncoder:
-    def train(dataset):
+    def __init__(self):
+        self.model = None
+
+    def train(self, dataset):
         with open(dataset, 'rb') as f:
             sequence = pickle.load(f)
         sequence = array(sequence)
@@ -30,12 +33,13 @@ class AutoEncoder:
 
     # model.save('old-models/model-'+str(dataset))
 
-    def get_vectors(data):
+    def get_vectors(self, data):
         # Load the latest model
-        model = load_model('model-latest.h5')
+        if self.model is None:
+            self.model = load_model('model-latest.h5')
 
         # Remove the decoder layer and set the model's output to the Encoder's output
-        model = Model(inputs=model.inputs, outputs=model.layers[3].output)
+        model = Model(inputs=self.model.inputs, outputs=self.model.layers[3].output)
 
         # Reshape the data
         sequence = array(data)

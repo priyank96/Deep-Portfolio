@@ -37,14 +37,13 @@ class AutoEncoder:
         # Load the latest model
         if self.model is None:
             self.model = load_model('model-latest.h5')
-
-        # Remove the decoder layer and set the model's output to the Encoder's output
-        model = Model(inputs=self.model.inputs, outputs=self.model.layers[3].output)
+            # Remove the decoder layer and set the model's output to the Encoder's output
+            self.model = Model(inputs=self.model.inputs, outputs=self.model.layers[3].output)
 
         # Reshape the data
         sequence = array(data)
         sequence = sequence.reshape((len(sequence), 20, 4))
 
         # Run the model on the input timeseries and get vector representation
-        vectors = model.predict(sequence)
+        vectors = self.model.predict(sequence)
         return vectors

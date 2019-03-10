@@ -1,4 +1,7 @@
+import pickle
 # load the testing dataset
+with open('../makeDataset/processedData/BackTestDict.pkl') as f:
+    data_set = pickle.load(f)
 
 # load the encoder class
 

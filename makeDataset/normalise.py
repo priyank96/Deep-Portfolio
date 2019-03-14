@@ -24,8 +24,9 @@ with open("./processedData/CompanyWiseDict.pkl", 'rb') as f:
     companyDict = pickle.load(f)
 
 for symbol in companyDict.keys():
-    normalize(companyDict[symbol])
-    remove_volume_and_time(companyDict[symbol])
+    if len(companyDict[symbol]) > 0:
+        normalize(companyDict[symbol])
+        remove_volume_and_time(companyDict[symbol])
 
 with open("./processedData/NormalisedCompanyWiseDict.pkl", 'wb') as f:
     pickle.dump(companyDict, f)

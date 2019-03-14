@@ -1,6 +1,9 @@
 # class to calculate sharpe ratio of a given time series of arbitrary length
-import numpy as np
 import math
+
+import numpy as np
+
+
 class SharpeRatio:
     # note that to calculate sharpe ratio from t0 to tn, pass t-1 to tn
     def __init__(self):

@@ -3,7 +3,7 @@ assumes the input dict is already sorted by time """
 import pickle
 from itertools import filterfalse
 
-with open('./processedData/CompanyWiseDict.pkl', 'rb') as fil:
+with open('./processedData/NormalisedCompanyWiseDict.pkl', 'rb') as fil:
     company_wise_dict = pickle.load(fil)
 
 # find the list of timestamps in all files
@@ -30,8 +30,7 @@ def filter(element):
 for key in keys:
     print(key)
     if len(company_wise_dict[key]) > 0:
-        company_wise_dict[key] = filterfalse(filter, company_wise_dict[key])
-
+        company_wise_dict[key] = list(filterfalse(filter, company_wise_dict[key]))
 with open('./processedData/BackTestDict.pkl', 'wb') as fil:
     pickle.dump(company_wise_dict, fil)
 

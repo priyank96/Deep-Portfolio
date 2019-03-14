@@ -8,8 +8,11 @@ from numpy import array
 
 
 class AutoEncoder:
+
     def __init__(self):
         self.model = None
+#        self.model_name = "model-latest.h5"
+        self.model_name = "C:\\Users\\Admin\\Documents\\8th Sem Project\\Deep-Portfolio\\autoEncoder\\Blah.h5"
 
     def train(self, dataset):
         with open(dataset, 'rb') as f:
@@ -29,21 +32,22 @@ class AutoEncoder:
 
         # print(model.summary())
         model.fit(sequence, sequence, epochs=1, batch_size=64, validation_split=0.2)
-        model.save('model-latest.h5')
+        model.save(self.model_name)
 
     # model.save('old-models/model-'+str(dataset))
 
-    def get_vectors(self, data):
+    def get_vector(self, data):
         # Load the latest model
         if self.model is None:
-            self.model = load_model('model-latest.h5')
+            self.model = load_model(self.model_name)
             # Remove the decoder layer and set the model's output to the Encoder's output
-            self.model = Model(inputs=self.model.inputs, outputs=self.model.layers[3].output)
+            self.model = Model(inputs=self.model.inputs, outputs=self.model.layers[2].output) # TODO IMPORTANT FOR THE CURRENT MODEL IT IS 2
 
         # Reshape the data
         sequence = array(data)
-        sequence = sequence.reshape((len(sequence), 20, 4))
+        sequence = sequence.reshape(1, 20, 4)
 
         # Run the model on the input timeseries and get vector representation
         vectors = self.model.predict(sequence)
+        print("shape: ",vectors.shape)
         return vectors
